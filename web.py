@@ -1,7 +1,7 @@
 import json
 var=4
 from myrepolib.repomod import fake_data
-from myrepolib import __version__
+from myrepolib.__init__ import __version__
 
 from flask import Flask
 app = Flask(__name__)
