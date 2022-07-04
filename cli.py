@@ -9,7 +9,7 @@ Commandline tool for interacting with library
 import click
 
 from myrepolib.repomod import print_name
-from myrepolib import __version__
+from myrepolib.__init__ import __version__
 
 
 @click.version_option(__version__)
