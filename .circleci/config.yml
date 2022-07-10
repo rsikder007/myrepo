@@ -65,5 +65,8 @@ jobs:
             gcloud --quiet config set project summer-ranger-355813
             gcloud --quiet config set compute/region us-west2
             gcloud app deploy
-
-
+            
+workflows:
+  toy-build-workflow:
+    jobs:
+      - build 
