@@ -63,7 +63,7 @@ jobs:
             gcloud auth activate-service-account --key-file=/tmp/sur.json
             rm /tmp/sur.json
             gcloud --quiet config set project qwiklabs-gcp-00-6a7638d1f745
-            gcloud --quiet config set compute/zone us-west2
+            gcloud --quiet config set compute/region us-west2
             gcloud app deploy
 
 
