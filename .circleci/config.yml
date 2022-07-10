@@ -63,7 +63,7 @@ jobs:
             gcloud auth activate-service-account --key-file=/tmp/sur.json
             rm /tmp/sur.json
             gcloud --quiet config set project summer-ranger-355813
-            gcloud --quiet config set compute/zone ${GOOGLE_COMPUTE_ZONE}
+            gcloud --quiet config set compute/region us-west2
             gcloud app deploy
 
 
