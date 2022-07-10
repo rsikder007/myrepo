@@ -58,15 +58,13 @@ jobs:
       - run:
           name: deploy to app engine
           command: |
-            #echo $GCLOUD_SERVICE_KEY | gcloud auth activate-service-account --key-file=-
             echo ${GCLOUD_SERVICE_KEY} > /tmp/sur.json
             gcloud auth activate-service-account --key-file=/tmp/sur.json
             rm /tmp/sur.json
             gcloud --quiet config set project summer-ranger-355813
             gcloud --quiet config set compute/region us-west2
             gcloud app deploy
-            
 workflows:
-  toy-build-workflow:
+  build:
     jobs:
       - build 
