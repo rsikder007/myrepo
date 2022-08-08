@@ -64,7 +64,13 @@ jobs:
             gcloud --quiet config set project summer-ranger-355813
             gcloud --quiet config set compute/region us-west2
             gcloud app deploy
+
+#Invoke jobs through workflows. Eg app will be built to dev unless branch selected is main
 workflows:
   build:
     jobs:
-      - build 
+      - build
+      - build_prod:
+        filters:
+          branches:
+            only: main
