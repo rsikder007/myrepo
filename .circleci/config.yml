@@ -60,7 +60,7 @@ jobs:
             gcloud auth activate-service-account --key-file=${HOME}/sur.json
             gcloud --quiet config set project ${GOOGLE_PROJECT_ID}
             gcloud --quiet config set compute/region ${GOOGLE_COMPUTE_REGION}-a
-            gcloud app deploy
+            gcloud app deploy app.yaml
 
 #Invoke jobs through workflows. Eg app will be built to dev unless branch selected is main
 workflows:
