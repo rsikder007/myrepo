@@ -6,7 +6,7 @@ import numpy as np
 import pickle
 import tensorflow as tf
 
-
+#Note you can just write your whole ml in nbk and conver that to .py
 App = Flask(__name__)
 
 @app.route('/')
