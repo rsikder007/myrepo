@@ -5,6 +5,9 @@ pytest-cov
 pandas
 nbval
 click
-flask
+Flask
 requests
 gunicorn
+numpy
+scipy
+scikit-learn
